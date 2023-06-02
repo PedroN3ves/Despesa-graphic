@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Expenses chart component</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <article class="balance"><p> My balance <br> <span>$921.48</span></p></article>
+      <div class="logo">
+        <img src="./images/logo.svg" alt="">
+      </div>
+    </header>
+
+    <main>
+      <section class="spending">
+        <h1>Spending - Last 7 days</h1>
+      </section>
+
+      <section class="week">
+        <div class="day">
+          <div class="mon"></div>
+          <article><p>mon</p></article>
+        </div>
+      </section>
+
+      <hr>
+
+      <section class="month">
+        <article class="money"> 
+          <p>Total this month</p> <span>$478.33</span> 
+        </article>
+
+        <article class="percent">
+          <span>+2.4%</span> <br> <p>from last month</p>
+        </article>
+      </section>
+    </main>
+  </div>
+  <!--
+
+  mon
+  tue
+  wed
+  thu
+  fri
+  sat
+  sun
+
+  -->
+  
+  <script src="index.js"></script>
+</body>
+</html>

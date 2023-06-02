@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Start style guide predefinitions  */
+:root{
+    /* ### Primary */
+
+    --Soft-red: hsl(10, 79%, 65%);
+    --Cyan: hsl(186, 34%, 60%);
+
+    /* ### Neutral */
+
+    --Dark-brown: hsl(25, 47%, 15%);
+    --Medium-brown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --Very-pale-orange: hsl(33, 100%, 98%);
+}
+
+html, body{
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--Cream);
+}
+
+p{
+    font-size: 18px;
+}
+/* End style guide predefinitions */
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 20px;
+    
+    height: 100vh;
+    width: 100vw;
+    min-width: 375px;
+    max-width: 1440px;
+}
+
+.container header{
+    background-color: var(--Soft-red);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.5rem;
+    gap: 21.5rem;
+
+    border-radius: 15px;
+}
+
+.container header .balance{
+    color:var(--Very-pale-orange);
+}
+
+.container header .balance span{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.container main{
+    background-color: var(--Very-pale-orange);
+
+    padding: 1.5rem;
+
+    border-radius: 15px;
+}
+
+.week{
+    display: flex;
+    align-items: end;
+    flex-direction: row;
+    gap: 40px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.day{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.mon{
+    background-color: var(--Soft-red);
+
+    border-radius: 5px;
+
+    width: 40px;
+    height: 34.9px;
+}
+
+.tue{
+    background-color: var(--Soft-red);
+
+    border-radius: 5px;
+
+    width: 40px;
+    height: 69.82px;
+}
+
+.wed{
+    background-color: var(--Cyan);
+
+    border-radius: 5px;
+
+    width: 40px;
+    height: 104.72px;
+}
+
+.thu{
+    background-color: var(--Soft-red);
+
+    border-radius: 5px;
+
+    width: 40px;
+    height: 62.14px;
+}
+
+.fri{
+    background-color: var(--Soft-red);
+
+    border-radius: 5px;
+
+    width: 40px;
+    height: 42.78px;
+}
+
+.sat{
+    background-color: var(--Soft-red);
+
+    border-radius: 5px;
+
+    width: 40px;
+    height: 86.56px;
+}
+
+.sun{
+    background-color: var(--Soft-red);
+
+    border-radius: 5px;
+
+    width: 40px;
+    height: 50.96px;
+}
+
+.container main .month{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 14rem;
+}
+
+.container main .month span{
+    font-weight: 700;
+}
+
+.money span{
+    font-size: 2.5rem;
+}
+
+
+
+@media only screen and (max-width:610px) {
+    main header {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+}
